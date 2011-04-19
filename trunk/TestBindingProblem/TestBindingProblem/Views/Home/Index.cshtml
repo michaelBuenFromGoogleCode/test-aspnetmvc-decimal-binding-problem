@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script src="/Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+
+<h2>Index</h2>
+
+<form method="post" id="theDataHolder">
+<input type="text" id="Lastname" name="Lastname" value="Lennon" />
+<input type="text" id="Firstname" name="Firstname" value="John" />
+<input type="text" id="Birthday" name="Birthday" value="Feb 31, 2011" />
+<input type="text" id="Salary" name="Salary" value="1,234" />
+
+<input type="submit" id="uxSubmitter"/>
+
+
+</form>
+
+<script>
+    // either "cleanse" the data before submitting
+    /*$(function () {
+        $('#theDataHolder').submit(function() {
+            var uxSalary = $('input[name=Salary]');
+            uxSalary.val(uxSalary.val().replace(',', ''));
+        });
+    });*/
+</script>
